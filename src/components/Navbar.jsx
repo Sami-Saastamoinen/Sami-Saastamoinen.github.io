@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
@@ -15,9 +16,9 @@ const Navbar = () => {
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between backdrop-blur  py-4 px-10 md:pr-20 lg:pr-40">
         <div className="font-major text-xl sm:text-2xl cursor-pointer flex items-center text-text hover:text-accent dark:dark duration-300">
-          <a href={"/"}>
+          <Link to={"/"}>
             Sami <br /> &nbsp;Saastamoinen
-          </a>
+          </Link>
         </div>
         <div
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -30,12 +31,12 @@ const Navbar = () => {
         >
           {links.map((link) => (
             <li key={link.name} className="md:ml-10 text-lg md:my-1 my-5">
-              <a
-                href={link.url}
+              <Link
+                to={link.url}
                 className="font-major text-text hover:text-accent dark:dark duration-300"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
