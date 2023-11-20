@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -23,10 +24,13 @@ function App() {
     </Routes>
   );
   return (
-    <Router>
-      <Navbar />
-      {routes}
-    </Router>
+    <div className="min-h-screen bg-background dark:dark">
+      <Router>
+        <Navbar />
+        {routes}
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

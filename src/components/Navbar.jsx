@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { HiMiniBars3BottomRight, HiMiniXMark } from "react-icons/hi2";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,11 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="w-8 text-text hover:text-accent dark:dark duration-300 md:hidden cursor-pointer absolute right-7 top-7 sm:right-8 sm:top-8"
         >
-          {isMenuOpen ? <XMarkIcon /> : <Bars3Icon />}
+          {isMenuOpen ? (
+            <HiMiniXMark size={32} />
+          ) : (
+            <HiMiniBars3BottomRight size={32} />
+          )}
         </div>
         <ul
           className={`md:flex md:items-center  ${isMenuOpen ? "" : "hidden"}`}
