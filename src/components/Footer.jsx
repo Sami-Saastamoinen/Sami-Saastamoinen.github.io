@@ -15,7 +15,7 @@ const Footer = () => {
         {Links.map((link) => (
           <li key={link.name} className="md:ml-8 text-xl my-1">
             <Link
-              to={link.link}
+              to={link.url}
               className="font-major text-text hover:text-accent dark:dark duration-300 underline"
             >
               {link.name}
