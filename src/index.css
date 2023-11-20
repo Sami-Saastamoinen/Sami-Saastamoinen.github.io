@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Source+Code+Pro&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #070a0e;
+    --background: #dfe4ec;
+    --primary: #9fb3d1;
+    --secondary: #ccd6e6;
+    --accent: #a5506f;
+    --card: #d8dde5;
+  }
+  .dark {
+    --text: #f1f4f8;
+    --background: #131820;
+    --primary: #2e4260;
+    --secondary: #192333;
+    --accent: #af5a79;
+    --card: #1a1f27;
+  }
+}
