@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full fixed top-0 left-0 z-10">
       <div className="md:flex items-center justify-between backdrop-blur  py-4 px-10 md:pr-20 lg:pr-40">
         <div className="font-major text-xl sm:text-2xl cursor-pointer flex items-center text-text hover:text-accent dark:dark duration-300">
           <Link to={"/"}>
