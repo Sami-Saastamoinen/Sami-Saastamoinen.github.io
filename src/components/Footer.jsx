@@ -27,7 +27,7 @@ const Footer = () => {
         <li className="text-xl my-1">
           <a
             href="https://www.linkedin.com/in/samisaastamoinen/"
-            className="text-text hover:text-accent dark:dark duration-300 flex items-center gap-2"
+            className="font-source text-text hover:text-accent dark:dark duration-300 flex items-center gap-2"
           >
             <FaLinkedin size={20} />
             @samisaastamoinen
@@ -36,7 +36,7 @@ const Footer = () => {
         <li className="text-xl my-1">
           <a
             href="https://github.com/Sami-Saastamoinen/"
-            className="text-text hover:text-accent dark:dark duration-300 flex items-center gap-2"
+            className="font-source text-text hover:text-accent dark:dark duration-300 flex items-center gap-2"
           >
             <FaGithub /> @Sami-Saastamoinen
           </a>
