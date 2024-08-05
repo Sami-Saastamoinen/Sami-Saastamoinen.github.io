@@ -19,7 +19,7 @@ const AboutPage = () => {
         about me
       </h1>
       <p className="font-source text-lg lg:text-xl text-text dark:dark text-center pb-10 px-5 whitespace-pre-line">
-        {`I'm a ${age} year old student from Tampere, Finland. I'm currently studying 4th year for a Bachelor's degree in ICT Engineering and specializing in Software Engineering at Tampere University of Applied Sciences.
+        {`I'm a ${age} year old Software Engineer from Tampere, Finland. I have recently graduated with a Bachelor's degree in ICT Engineering specializing in Software Engineering from Tampere University of Applied Sciences.
         
         Here's a few of my hobbies and objects of interest:`}
       </p>
